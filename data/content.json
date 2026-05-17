@@ -1,0 +1,37 @@
+{
+  "splash": {
+    "headline1": "Senior Product Designer",
+    "headline2": "crafting",
+    "headlineAccent": "scalable",
+    "headline3": "digital",
+    "headline4": "interfaces for Fintech",
+    "headline5": "& beyond.",
+    "lede": "Six years leveraging systems-thinking to design web, mobile, and back-office platforms — anticipating the next user move before it happens.",
+    "available": "Available · Q3 2026",
+    "focus": "Fintech · Platforms",
+    "based": "Yerevan, AM"
+  },
+  "about": {
+    "bio": "I am a Senior Product Designer based in Yerevan with over 6 years of experience crafting scalable digital interfaces, primarily for fintech, backoffice, and mobile platforms",
+    "bio2": "Outside of design, I enjoy playing chess, taking creative classes like ceramics or macrame, and recharging in nature.",
+    "facts": [
+      {"key": "Experience", "value": "6+ years across fintech, real-estate, on-demand services and internal tooling.", "accent": "6+ years"},
+      {"key": "Specialty", "value": "Fintech - mobile banking, payments, back-office, compliance flows.", "accent": null},
+      {"key": "Toolkit", "value": "Figma · Figma Make · Maze · Mixpanel · Notion · Linear · enough HTML/CSS", "accent": null},
+      {"key": "Methods", "value": "Generative research, usability studies, design systems, accessibility audits, JTBD.", "accent": null},
+      {"key": "Languages", "value": "Armenian · Russian · English · enough Figma plugins to count.", "accent": null},
+      {"key": "Off-screen", "value": "Chess, new cities, slow trains.", "accent": null}
+    ]
+  },
+  "contact": {
+    "email": "inesa.khachatrian@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/inesa-khachatryan/",
+    "cta": "Your next move, played together.",
+    "copyright": "© 2026 Inesa Khachatryan · Designed & built in Yerevan"
+  },
+  "images": {
+    "portrait": null,
+    "about": null,
+    "footer": null
+  }
+}
