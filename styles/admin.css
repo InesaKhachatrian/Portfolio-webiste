@@ -957,6 +957,118 @@ select {
   justify-content: flex-end;
 }
 
+/* ── Image upload widget ── */
+.image-upload-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--admin-border);
+}
+.image-upload-label {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 13px;
+  color: var(--admin-text);
+}
+.image-upload-hint {
+  font-size: 11px;
+  color: var(--admin-muted);
+  font-weight: 400;
+}
+.image-upload-drop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 28px 20px;
+  border: 1.5px dashed var(--admin-border);
+  border-radius: 8px;
+  background: var(--admin-bg);
+  cursor: pointer;
+  color: var(--admin-muted);
+  font-size: 13px;
+  transition: border-color 0.15s, background 0.15s;
+}
+.image-upload-drop:hover {
+  border-color: var(--admin-accent);
+  background: rgba(201, 100, 66, 0.04);
+  color: var(--admin-accent);
+}
+.image-upload-preview {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--admin-border);
+  background: var(--admin-bg);
+}
+.image-upload-preview img {
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+  display: block;
+}
+.image-upload-controls {
+  display: flex;
+  gap: 8px;
+  padding: 10px 12px;
+  background: rgba(255,255,255,0.9);
+  border-top: 1px solid var(--admin-border);
+}
+.image-upload-error {
+  font-size: 12px;
+  color: #c0392b;
+}
+.btn-sm {
+  padding: 4px 10px !important;
+  font-size: 12px !important;
+  height: auto !important;
+}
+
+/* ── Custom section blocks ── */
+.form-section-desc {
+  font-size: 13px;
+  color: var(--admin-muted);
+  margin: 4px 0 16px;
+}
+.custom-section-block {
+  border: 1px solid var(--admin-border);
+  border-radius: 8px;
+  margin-bottom: 16px;
+  background: var(--admin-surface);
+}
+.custom-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--admin-border);
+  background: var(--admin-bg);
+  border-radius: 8px 8px 0 0;
+}
+.custom-section-num {
+  font-family: var(--admin-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--admin-muted);
+}
+.custom-section-actions {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.btn-danger {
+  color: #c0392b !important;
+}
+.btn-danger:hover {
+  background: rgba(192, 57, 43, 0.08) !important;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .admin-content {

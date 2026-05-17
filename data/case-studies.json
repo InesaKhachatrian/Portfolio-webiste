@@ -7,7 +7,11 @@
     "num": "01 / FEATURED",
     "year": "2024 — 2025",
     "category": "Real Estate",
-    "tags": ["Real Estate", "Mobile · Web", "2024 — 2025"],
+    "tags": [
+      "Real Estate",
+      "Mobile · Web",
+      "2024 — 2025"
+    ],
     "tile": "gold",
     "mockVariant": "hhi",
     "sub": "Revolutionizing real estate through transparency — a buyer-facing platform that surfaces the data agents won't.",
@@ -21,10 +25,22 @@
     },
     "tldr": {
       "stats": [
-        {"n": "+38%", "label": "task completion rate"},
-        {"n": "−42%", "label": "drop-off on listing detail"},
-        {"n": "4.6★", "label": "avg. usability score"},
-        {"n": "73%", "label": "users felt 'more confident'"}
+        {
+          "n": "+38%",
+          "label": "task completion rate"
+        },
+        {
+          "n": "−42%",
+          "label": "drop-off on listing detail"
+        },
+        {
+          "n": "4.6★",
+          "label": "avg. usability score"
+        },
+        {
+          "n": "73%",
+          "label": "users felt 'more confident'"
+        }
       ],
       "summary": "A buyer-facing real estate platform designed to surface information agents typically gate. The core challenge: how do you build trust in a domain defined by information asymmetry?"
     },
@@ -43,18 +59,51 @@
       "heading": "Treating time as\nprecious",
       "methodLabel": "METHOD",
       "steps": [
-        {"n": "01.", "title": "Stakeholder alignment", "desc": "Two workshops to align on success metrics before wireframes touched Figma."},
-        {"n": "02.", "title": "Contextual inquiry", "desc": "Shadowed 4 buyers during active searches — mapped every moment of doubt."},
-        {"n": "03.", "title": "Competitive audit", "desc": "Benchmarked 11 platforms across 18 transparency dimensions."},
-        {"n": "04.", "title": "Prototype + test (R1)", "desc": "6 usability sessions, 14 iterations — focused on information hierarchy."},
-        {"n": "05.", "title": "Accessibility pass", "desc": "WCAG AA across all states; contrast ratios documented in the DS."},
-        {"n": "06.", "title": "Handoff + measure", "desc": "Developer pairing over 3 sprints; analytics instrumented at key funnels."}
+        {
+          "n": "01.",
+          "title": "Stakeholder alignment",
+          "desc": "Two workshops to align on success metrics before wireframes touched Figma."
+        },
+        {
+          "n": "02.",
+          "title": "Contextual inquiry",
+          "desc": "Shadowed 4 buyers during active searches — mapped every moment of doubt."
+        },
+        {
+          "n": "03.",
+          "title": "Competitive audit",
+          "desc": "Benchmarked 11 platforms across 18 transparency dimensions."
+        },
+        {
+          "n": "04.",
+          "title": "Prototype + test (R1)",
+          "desc": "6 usability sessions, 14 iterations — focused on information hierarchy."
+        },
+        {
+          "n": "05.",
+          "title": "Accessibility pass",
+          "desc": "WCAG AA across all states; contrast ratios documented in the DS."
+        },
+        {
+          "n": "06.",
+          "title": "Handoff + measure",
+          "desc": "Developer pairing over 3 sprints; analytics instrumented at key funnels."
+        }
       ],
       "wireframeLabel": "WIREFRAMES",
       "iterations": [
-        {"v": "V1 · STORY-LED", "desc": "Narrative-first layout — felt too editorial, buried the data."},
-        {"v": "V2 · + TRANSPARENCY", "desc": "Added pricing history inline — improved trust scores +31%."},
-        {"v": "V3 · SHIPPED", "desc": "Final: data first, story as context — highest task completion."}
+        {
+          "v": "V1 · STORY-LED",
+          "desc": "Narrative-first layout — felt too editorial, buried the data."
+        },
+        {
+          "v": "V2 · + TRANSPARENCY",
+          "desc": "Added pricing history inline — improved trust scores +31%."
+        },
+        {
+          "v": "V3 · SHIPPED",
+          "desc": "Final: data first, story as context — highest task completion."
+        }
       ],
       "hifiLabel": "HI-FI"
     },
@@ -62,10 +111,22 @@
       "label": "03 · THE IMPACT",
       "heading": "The app made it\nso easy and fun",
       "stats": [
-        {"n": "+38%", "label": "task completion (target: +25%)"},
-        {"n": "−42%", "label": "drop-off on listing detail"},
-        {"n": "73%", "label": "\"felt more confident\" (SUS)"},
-        {"n": "14 → 17", "label": "NPS increase post-launch"}
+        {
+          "n": "+38%",
+          "label": "task completion (target: +25%)"
+        },
+        {
+          "n": "−42%",
+          "label": "drop-off on listing detail"
+        },
+        {
+          "n": "73%",
+          "label": "\"felt more confident\" (SUS)"
+        },
+        {
+          "n": "14 → 17",
+          "label": "NPS increase post-launch"
+        }
       ],
       "quote": "\"For the first time I felt like I was on equal footing with my agent.\"",
       "quoteAuthor": "— Beta user, 34, first-time buyer",
@@ -74,8 +135,20 @@
         "Show the data, then frame it. Raw numbers without context increase anxiety — the transparency layer worked because it was curated, not dumped.",
         "Anticipate the second move. The best UX decision was the 'Similar sold' panel — users didn't ask for it, but 68% used it."
       ],
-      "nextMoves": ["Extend transparency model to rental market.", "A/B test AI-assisted price prediction overlay.", "Partner API for public records integration."]
-    }
+      "nextMoves": [
+        "Extend transparency model to rental market.",
+        "A/B test AI-assisted price prediction overlay.",
+        "Partner API for public records integration."
+      ]
+    },
+    "images": {
+      "banner": null,
+      "challenge": null,
+      "process": null,
+      "hifi": null,
+      "impact": null
+    },
+    "customSections": []
   },
   {
     "id": "idram",
@@ -85,7 +158,11 @@
     "num": "02",
     "year": "2023",
     "category": "Fintech",
-    "tags": ["Fintech", "Mobile", "2023"],
+    "tags": [
+      "Fintech",
+      "Mobile",
+      "2023"
+    ],
     "tile": "lavender",
     "mockVariant": "idram",
     "sub": "Mobile banking for Armenia's largest fintech — a calmer, denser feed for power users.",
@@ -99,10 +176,22 @@
     },
     "tldr": {
       "stats": [
-        {"n": "+24%", "label": "daily active users"},
-        {"n": "−35%", "label": "support tickets on payments"},
-        {"n": "4.4★", "label": "App Store rating"},
-        {"n": "82%", "label": "task success rate"}
+        {
+          "n": "+24%",
+          "label": "daily active users"
+        },
+        {
+          "n": "−35%",
+          "label": "support tickets on payments"
+        },
+        {
+          "n": "4.4★",
+          "label": "App Store rating"
+        },
+        {
+          "n": "82%",
+          "label": "task success rate"
+        }
       ],
       "summary": "Idram is Armenia's most-used digital payment platform. The redesign focused on reducing cognitive load for power users managing multiple accounts and frequent transactions."
     },
@@ -121,18 +210,51 @@
       "heading": "Information\nhierarchy first",
       "methodLabel": "METHOD",
       "steps": [
-        {"n": "01.", "title": "Usage analytics audit", "desc": "Mapped 90-day user flows to surface the true top-5 jobs."},
-        {"n": "02.", "title": "Card sorting", "desc": "32 participants grouped 40 features — revealed a 3-cluster mental model."},
-        {"n": "03.", "title": "Hierarchy redesign", "desc": "Moved top actions to bottom nav; secondary features in contextual drawers."},
-        {"n": "04.", "title": "Visual density work", "desc": "Reduced transaction list line-height 22→16px — fits 6 vs 4 items without crowding."},
-        {"n": "05.", "title": "Prototype testing", "desc": "8 sessions, measured task completion time — 40% faster on key flows."},
-        {"n": "06.", "title": "Accessibility audit", "desc": "Full WCAG AA compliance; high-contrast mode added for outdoor use."}
+        {
+          "n": "01.",
+          "title": "Usage analytics audit",
+          "desc": "Mapped 90-day user flows to surface the true top-5 jobs."
+        },
+        {
+          "n": "02.",
+          "title": "Card sorting",
+          "desc": "32 participants grouped 40 features — revealed a 3-cluster mental model."
+        },
+        {
+          "n": "03.",
+          "title": "Hierarchy redesign",
+          "desc": "Moved top actions to bottom nav; secondary features in contextual drawers."
+        },
+        {
+          "n": "04.",
+          "title": "Visual density work",
+          "desc": "Reduced transaction list line-height 22→16px — fits 6 vs 4 items without crowding."
+        },
+        {
+          "n": "05.",
+          "title": "Prototype testing",
+          "desc": "8 sessions, measured task completion time — 40% faster on key flows."
+        },
+        {
+          "n": "06.",
+          "title": "Accessibility audit",
+          "desc": "Full WCAG AA compliance; high-contrast mode added for outdoor use."
+        }
       ],
       "wireframeLabel": "WIREFRAMES",
       "iterations": [
-        {"v": "V1 · FLAT LIST", "desc": "All transactions equal weight — mirrored the original problem."},
-        {"v": "V2 · GROUPED", "desc": "Date + category grouping — reduced scanning time by 28%."},
-        {"v": "V3 · SHIPPED", "desc": "Smart grouping + balance prominance — clearest hierarchy."}
+        {
+          "v": "V1 · FLAT LIST",
+          "desc": "All transactions equal weight — mirrored the original problem."
+        },
+        {
+          "v": "V2 · GROUPED",
+          "desc": "Date + category grouping — reduced scanning time by 28%."
+        },
+        {
+          "v": "V3 · SHIPPED",
+          "desc": "Smart grouping + balance prominance — clearest hierarchy."
+        }
       ],
       "hifiLabel": "HI-FI"
     },
@@ -140,10 +262,22 @@
       "label": "03 · THE IMPACT",
       "heading": "Banking that feels\ncalm and fast",
       "stats": [
-        {"n": "+24%", "label": "daily active users (6mo post-launch)"},
-        {"n": "−35%", "label": "payment support tickets"},
-        {"n": "4.4★", "label": "App Store (from 3.8)"},
-        {"n": "82%", "label": "task success (benchmark: 71%)"}
+        {
+          "n": "+24%",
+          "label": "daily active users (6mo post-launch)"
+        },
+        {
+          "n": "−35%",
+          "label": "payment support tickets"
+        },
+        {
+          "n": "4.4★",
+          "label": "App Store (from 3.8)"
+        },
+        {
+          "n": "82%",
+          "label": "task success (benchmark: 71%)"
+        }
       ],
       "quote": "\"It used to feel like work. Now it actually feels like a banking app.\"",
       "quoteAuthor": "— Power user, 28, freelancer",
@@ -152,8 +286,20 @@
         "Analytics lie about frequency, not about pain. The most complained-about flow (transfers) wasn't the most-used — it was just the most broken.",
         "Bottom nav for finance is non-negotiable. One-handed operation for an app people use on commutes is a usability multiplier."
       ],
-      "nextMoves": ["Personalized dashboard ordering based on usage patterns.", "Biometric auth improvements for faster access.", "Widget support for iOS/Android home screens."]
-    }
+      "nextMoves": [
+        "Personalized dashboard ordering based on usage patterns.",
+        "Biometric auth improvements for faster access.",
+        "Widget support for iOS/Android home screens."
+      ]
+    },
+    "images": {
+      "banner": null,
+      "challenge": null,
+      "process": null,
+      "hifi": null,
+      "impact": null
+    },
+    "customSections": []
   },
   {
     "id": "auto",
@@ -163,7 +309,11 @@
     "num": "03",
     "year": "2025",
     "category": "On-demand",
-    "tags": ["On-demand", "Mobile · Back-office", "2025"],
+    "tags": [
+      "On-demand",
+      "Mobile · Back-office",
+      "2025"
+    ],
     "tile": "mint",
     "mockVariant": "auto",
     "sub": "On-demand mechanics for stranded drivers, freelance pros, and fleet managers.",
@@ -177,10 +327,22 @@
     },
     "tldr": {
       "stats": [
-        {"n": "6 min", "label": "avg. dispatch time"},
-        {"n": "4.7★", "label": "driver satisfaction"},
-        {"n": "+31%", "label": "mechanic earnings"},
-        {"n": "3 apps", "label": "one design system"}
+        {
+          "n": "6 min",
+          "label": "avg. dispatch time"
+        },
+        {
+          "n": "4.7★",
+          "label": "driver satisfaction"
+        },
+        {
+          "n": "+31%",
+          "label": "mechanic earnings"
+        },
+        {
+          "n": "3 apps",
+          "label": "one design system"
+        }
       ],
       "summary": "Auto serves three user types — stranded drivers, independent mechanics, and fleet managers — from a single design system. The challenge: one platform, three radically different mental models."
     },
@@ -199,18 +361,51 @@
       "heading": "One system,\nthree voices",
       "methodLabel": "METHOD",
       "steps": [
-        {"n": "01.", "title": "Parallel JTBD mapping", "desc": "Ran 3 simultaneous journey maps — found 6 shared interaction patterns."},
-        {"n": "02.", "title": "Design system first", "desc": "Built the DS before any screen — every component maps to a user need."},
-        {"n": "03.", "title": "Driver app (MVP)", "desc": "Emergency-first flow: location → dispatch → ETA → mechanic profile."},
-        {"n": "04.", "title": "Mechanic app", "desc": "Earnings-first dashboard: today's jobs, routing, and income tracking."},
-        {"n": "05.", "title": "Fleet back-office", "desc": "Web dashboard: vehicle status, staff scheduling, analytics."},
-        {"n": "06.", "title": "Cross-app testing", "desc": "Ran end-to-end sessions with all 3 user types simultaneously."}
+        {
+          "n": "01.",
+          "title": "Parallel JTBD mapping",
+          "desc": "Ran 3 simultaneous journey maps — found 6 shared interaction patterns."
+        },
+        {
+          "n": "02.",
+          "title": "Design system first",
+          "desc": "Built the DS before any screen — every component maps to a user need."
+        },
+        {
+          "n": "03.",
+          "title": "Driver app (MVP)",
+          "desc": "Emergency-first flow: location → dispatch → ETA → mechanic profile."
+        },
+        {
+          "n": "04.",
+          "title": "Mechanic app",
+          "desc": "Earnings-first dashboard: today's jobs, routing, and income tracking."
+        },
+        {
+          "n": "05.",
+          "title": "Fleet back-office",
+          "desc": "Web dashboard: vehicle status, staff scheduling, analytics."
+        },
+        {
+          "n": "06.",
+          "title": "Cross-app testing",
+          "desc": "Ran end-to-end sessions with all 3 user types simultaneously."
+        }
       ],
       "wireframeLabel": "WIREFRAMES",
       "iterations": [
-        {"v": "V1 · UNIFIED", "desc": "Single app with role switching — users confused by context changes."},
-        {"v": "V2 · SEPARATED", "desc": "Three apps, shared DS — each app focused, brand consistent."},
-        {"v": "V3 · SHIPPED", "desc": "Separated apps + shared onboarding flow — best of both."}
+        {
+          "v": "V1 · UNIFIED",
+          "desc": "Single app with role switching — users confused by context changes."
+        },
+        {
+          "v": "V2 · SEPARATED",
+          "desc": "Three apps, shared DS — each app focused, brand consistent."
+        },
+        {
+          "v": "V3 · SHIPPED",
+          "desc": "Separated apps + shared onboarding flow — best of both."
+        }
       ],
       "hifiLabel": "HI-FI"
     },
@@ -218,10 +413,22 @@
       "label": "03 · THE IMPACT",
       "heading": "Help arrives in\n6 minutes flat",
       "stats": [
-        {"n": "6 min", "label": "avg. dispatch time (target: 8)"},
-        {"n": "4.7★", "label": "driver satisfaction score"},
-        {"n": "+31%", "label": "mechanic average earnings"},
-        {"n": "3 apps", "label": "shipped in 4 months"}
+        {
+          "n": "6 min",
+          "label": "avg. dispatch time (target: 8)"
+        },
+        {
+          "n": "4.7★",
+          "label": "driver satisfaction score"
+        },
+        {
+          "n": "+31%",
+          "label": "mechanic average earnings"
+        },
+        {
+          "n": "3 apps",
+          "label": "shipped in 4 months"
+        }
       ],
       "quote": "\"When my tire blew at midnight, the app was the calmest thing in that moment.\"",
       "quoteAuthor": "— Driver, 41, tested in field",
@@ -230,7 +437,19 @@
         "Earnings visibility changes behavior. Mechanics who could see their projected daily earnings took 23% more jobs than those who couldn't.",
         "Shared design systems compound. Building the DS upfront cost 2 extra weeks but saved 6 weeks across three parallel builds."
       ],
-      "nextMoves": ["Predictive dispatch using traffic and mechanic location data.", "In-app payment and invoicing for mechanics.", "Integration with insurance APIs for covered roadside."]
-    }
+      "nextMoves": [
+        "Predictive dispatch using traffic and mechanic location data.",
+        "In-app payment and invoicing for mechanics.",
+        "Integration with insurance APIs for covered roadside."
+      ]
+    },
+    "images": {
+      "banner": null,
+      "challenge": null,
+      "process": null,
+      "hifi": null,
+      "impact": null
+    },
+    "customSections": []
   }
 ]

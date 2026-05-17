@@ -76,6 +76,15 @@ function PhoneMock({ variant }: { variant: string }) {
 
 // ── Banner ────────────────────────────────────────────────────────────
 function CsBanner({ cs }: { cs: CaseStudy }) {
+  if (cs.images?.banner) {
+    return (
+      <div className="cs-banner" style={{ aspectRatio: 'unset' }}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={cs.images.banner} alt={cs.hero.bannerLabel || cs.title} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+        {cs.hero.bannerLabel && <span className="mock-label">{cs.hero.bannerLabel}</span>}
+      </div>
+    );
+  }
   return (
     <div className="cs-banner">
       <div className="hhi-banner">
@@ -337,10 +346,17 @@ export default function CaseStudyPage({ cs, nextCs }: CaseStudyPageProps) {
               <div className="sub">{cs.challenge.affinityLabel}</div>
             </div>
             <div className="cs-prose">
-              <div className="cs-pair">
-                <AffinityMapMock />
-                <JtbdMock />
-              </div>
+              {cs.images?.challenge ? (
+                <div className="cs-fig wide" style={{ aspectRatio: 'unset', minHeight: 240 }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={cs.images.challenge} alt="Challenge research" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                </div>
+              ) : (
+                <div className="cs-pair">
+                  <AffinityMapMock />
+                  <JtbdMock />
+                </div>
+              )}
               <p style={{ marginTop: 28 }}>{cs.challenge.researchFindings}</p>
             </div>
           </div>
@@ -396,25 +412,32 @@ export default function CaseStudyPage({ cs, nextCs }: CaseStudyPageProps) {
               <div className="sub">Same screen, three rewrites. Negotiating density against narrative.</div>
             </div>
             <div className="cs-prose">
-              <div className="iters">
-                {cs.process.iterations.map((iter, i) => (
-                  <div key={i} className="iter">
-                    <div className="v">{iter.v}</div>
-                    <div className="lines">
-                      <i className="box" />
-                      <i className="long" />
-                      <i className="mid" />
-                      <i className="short" />
-                      {i > 0 && <i className="gold" />}
-                      <i className="long" />
-                      <i className="mid" />
+              {cs.images?.process ? (
+                <div className="cs-fig wide" style={{ aspectRatio: 'unset', minHeight: 260 }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={cs.images.process} alt="Process / wireframes" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                </div>
+              ) : (
+                <div className="iters">
+                  {cs.process.iterations.map((iter, i) => (
+                    <div key={i} className="iter">
+                      <div className="v">{iter.v}</div>
+                      <div className="lines">
+                        <i className="box" />
+                        <i className="long" />
+                        <i className="mid" />
+                        <i className="short" />
+                        {i > 0 && <i className="gold" />}
+                        <i className="long" />
+                        <i className="mid" />
+                      </div>
+                      <div style={{ fontSize: 11, fontFamily: 'var(--font-mono)', color: 'var(--muted)', lineHeight: 1.5 }}>
+                        {iter.desc}
+                      </div>
                     </div>
-                    <div style={{ fontSize: 11, fontFamily: 'var(--font-mono)', color: 'var(--muted)', lineHeight: 1.5 }}>
-                      {iter.desc}
-                    </div>
-                  </div>
-                ))}
-              </div>
+                  ))}
+                </div>
+              )}
             </div>
           </div>
 
@@ -425,35 +448,44 @@ export default function CaseStudyPage({ cs, nextCs }: CaseStudyPageProps) {
               <div className="sub">The shipped flow.</div>
             </div>
             <div>
-              <HifiMocks variant={cs.mockVariant} />
-              <div className="cs-fig wide" style={{ marginTop: 16, padding: 32, display: 'grid', placeItems: 'center' }}>
-                <div className="desk" style={{ width: '78%' }}>
-                  <div className="bar">
-                    <span className="dot" /><span className="dot" /><span className="dot" />
-                  </div>
-                  <div className="desk-content" style={{ display: 'grid', gridTemplateColumns: '220px 1fr 280px', height: 'calc(100% - 22px)' }}>
-                    <div style={{ borderRight: '1px solid var(--line)', padding: 18, display: 'flex', flexDirection: 'column', gap: 8 }}>
-                      <div style={{ fontFamily: 'var(--font-mono)', fontSize: 9, color: 'rgb(217, 119, 87)', letterSpacing: '0.12em' }}>FILTERS</div>
-                      <div style={{ height: 5, background: 'var(--ink-3)', width: '80%' }} />
-                      <div style={{ height: 5, background: 'var(--ink-3)', width: '60%' }} />
-                      <div style={{ height: 5, background: 'var(--ink-3)', width: '70%' }} />
-                    </div>
-                    <div style={{ padding: 18 }}>
-                      <div style={{ height: 8, background: 'var(--gold)', opacity: 0.5, width: '30%', marginBottom: 12 }} />
-                      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
-                        <div style={{ aspectRatio: '4/3', background: 'var(--ink-3)' }} />
-                        <div style={{ aspectRatio: '4/3', background: 'var(--ink-3)' }} />
+              {cs.images?.hifi ? (
+                <div className="cs-fig wide" style={{ aspectRatio: 'unset', minHeight: 320 }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={cs.images.hifi} alt="Hi-fi mockups" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                </div>
+              ) : (
+                <>
+                  <HifiMocks variant={cs.mockVariant} />
+                  <div className="cs-fig wide" style={{ marginTop: 16, padding: 32, display: 'grid', placeItems: 'center' }}>
+                    <div className="desk" style={{ width: '78%' }}>
+                      <div className="bar">
+                        <span className="dot" /><span className="dot" /><span className="dot" />
+                      </div>
+                      <div className="desk-content" style={{ display: 'grid', gridTemplateColumns: '220px 1fr 280px', height: 'calc(100% - 22px)' }}>
+                        <div style={{ borderRight: '1px solid var(--line)', padding: 18, display: 'flex', flexDirection: 'column', gap: 8 }}>
+                          <div style={{ fontFamily: 'var(--font-mono)', fontSize: 9, color: 'rgb(217, 119, 87)', letterSpacing: '0.12em' }}>FILTERS</div>
+                          <div style={{ height: 5, background: 'var(--ink-3)', width: '80%' }} />
+                          <div style={{ height: 5, background: 'var(--ink-3)', width: '60%' }} />
+                          <div style={{ height: 5, background: 'var(--ink-3)', width: '70%' }} />
+                        </div>
+                        <div style={{ padding: 18 }}>
+                          <div style={{ height: 8, background: 'var(--gold)', opacity: 0.5, width: '30%', marginBottom: 12 }} />
+                          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
+                            <div style={{ aspectRatio: '4/3', background: 'var(--ink-3)' }} />
+                            <div style={{ aspectRatio: '4/3', background: 'var(--ink-3)' }} />
+                          </div>
+                        </div>
+                        <div style={{ borderLeft: '1px solid var(--line)', padding: 18 }}>
+                          <div style={{ height: 5, background: 'var(--gold)', opacity: 0.6, width: '60%', marginBottom: 8 }} />
+                          <div style={{ height: 4, background: 'var(--ink-3)', width: '90%', marginBottom: 4 }} />
+                          <div style={{ height: 4, background: 'var(--ink-3)', width: '70%' }} />
+                        </div>
                       </div>
                     </div>
-                    <div style={{ borderLeft: '1px solid var(--line)', padding: 18 }}>
-                      <div style={{ height: 5, background: 'var(--gold)', opacity: 0.6, width: '60%', marginBottom: 8 }} />
-                      <div style={{ height: 4, background: 'var(--ink-3)', width: '90%', marginBottom: 4 }} />
-                      <div style={{ height: 4, background: 'var(--ink-3)', width: '70%' }} />
-                    </div>
+                    <span className="cap">Web dashboard</span>
                   </div>
-                </div>
-                <span className="cap">Web dashboard</span>
-              </div>
+                </>
+              )}
             </div>
           </div>
         </section>
@@ -512,9 +544,44 @@ export default function CaseStudyPage({ cs, nextCs }: CaseStudyPageProps) {
                   </ul>
                 </div>
               )}
+
+              {cs.images?.impact && (
+                <div className="cs-fig wide" style={{ marginTop: 48, aspectRatio: 'unset', minHeight: 280 }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={cs.images.impact} alt="Impact" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                </div>
+              )}
             </div>
           </div>
         </section>
+
+        {/* Custom Sections */}
+        {(cs.customSections || []).map((section) => (
+          <div key={section.id}>
+            <div className="wrap"><div className="rule" /></div>
+            <section className="section wrap">
+              <div className="cs-block">
+                <div className="left">
+                  {section.label && <div className="label">{section.label}</div>}
+                </div>
+                <div className="cs-prose">
+                  {section.title && (
+                    <h2 className="h-1" style={{ marginBottom: 32 }}>{section.title}</h2>
+                  )}
+                  {section.body.split('\n\n').map((para, i) => (
+                    <p key={i}>{para}</p>
+                  ))}
+                  {section.image && (
+                    <div className="cs-fig wide" style={{ marginTop: 40, aspectRatio: 'unset', minHeight: 280 }}>
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={section.image} alt={section.title} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                    </div>
+                  )}
+                </div>
+              </div>
+            </section>
+          </div>
+        ))}
 
         <div className="wrap"><div className="rule" /></div>
 

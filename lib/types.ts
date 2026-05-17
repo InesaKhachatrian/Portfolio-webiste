@@ -20,6 +20,22 @@ export interface Fact {
   accent: string | null;
 }
 
+export interface CustomSection {
+  id: string;
+  label: string;
+  title: string;
+  body: string;
+  image: string | null;
+}
+
+export interface CaseStudyImages {
+  banner: string | null;
+  challenge: string | null;
+  process: string | null;
+  hifi: string | null;
+  impact: string | null;
+}
+
 export interface CaseStudy {
   id: string;
   slug: string;
@@ -34,6 +50,8 @@ export interface CaseStudy {
   sub: string;
   published: boolean;
   order: number;
+  images: CaseStudyImages;
+  customSections: CustomSection[];
   hero: {
     eyebrow: string;
     title: string;
