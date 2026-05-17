@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Happy Home Initiative — Case Study · Inesa Khachatryan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&family=Inter+Tight:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<style>
+  /* page-local: sticky chapter nav on case study */
+  .cs-nav {
+    position: sticky;
+    top: 64px;
+    z-index: 30;
+    backdrop-filter: blur(14px) saturate(140%);
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
+    background: color-mix(in oklab, var(--ink) 80%, transparent);
+    border-bottom: 1px solid var(--line);
+    margin-top: 64px;
+  }
+  .cs-nav-inner {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 14px var(--gutter);
+    gap: 24px;
+  }
+  .cs-nav-back { display: inline-flex; gap: 10px; align-items: center; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+  .cs-nav-back:hover { color: var(--gold); }
+  .cs-nav-chapters {
+    display: flex; gap: 28px;
+    font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--muted);
+  }
+  .cs-nav-chapters a:hover { color: var(--paper); }
+  .cs-nav-chapters .num { color: var(--gold); margin-right: 6px; }
+  @media (max-width: 760px) { .cs-nav-chapters { display: none; } }
+
+  /* Case study accent — coral instead of gold */
+  html:not(.theme-dark) .cs-block .left .label,
+  html:not(.theme-dark) .cs-stat .n,
+  html:not(.theme-dark) .cs-step .n,
+  html:not(.theme-dark) .iter .v,
+  html:not(.theme-dark) .cs-prose .em,
+  html:not(.theme-dark) .lede .em,
+  html:not(.theme-dark) .em,
+  html:not(.theme-dark) .cs-hero .h-display span:last-child,
+  html:not(.theme-dark) .h-1 span[style*="font-style: italic"],
+  html:not(.theme-dark) .h-1 span[style*="italic"],
+  html:not(.theme-dark) .h-display span[style*="font-style: italic"] {
+    color: rgb(217, 119, 87) !important;
+  }
+  html:not(.theme-dark) .cs-quote { border-left-color: rgb(217, 119, 87); }
+  html:not(.theme-dark) .cs-nav-chapters .num { color: rgb(217, 119, 87); }
+  html:not(.theme-dark) .cs-nav-inner a[style*="gold"],
+  html:not(.theme-dark) .cs-nav-inner a:last-child { color: rgb(217, 119, 87); }
+  html:not(.theme-dark) .nav-brand .dot { background-color: rgb(217, 119, 87) !important; }
+  html:not(.theme-dark) .foot-cta .h-display .gold { color: rgb(217, 119, 87) !important; }
+  html:not(.theme-dark) .foot-cta a.mail span { color: rgb(217, 119, 87) !important; }
+</style>
+</head>
+<body class="page-fade-in fp-editorial">
+<!-- Top nav -->
+<nav class="nav">
+  <a href="index.html" class="nav-brand">
+    <span class="dot"></span>
+    <span>Inesa Khachatryan</span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html#work" class="is-active">Work</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="https://www.linkedin.com/in/inesa-khachatryan/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+  </div>
+</nav>
+
+<!-- Sticky chapter nav -->
+<div class="cs-nav">
+  <div class="cs-nav-inner">
+    <a href="index.html" class="cs-nav-back">← All work</a>
+    <div class="cs-nav-chapters">
+      <a href="#challenge"><span class="num">01</span>Challenge</a>
+      <a href="#process"><span class="num">02</span>Process</a>
+      <a href="#impact"><span class="num">03</span>Impact</a>
+    </div>
+    <a href="index.html#contact" class="cs-nav-back" style="color: var(--gold);">Hire ↗</a>
+  </div>
+</div>
+
+<main data-screen-label="HHI Case Study">
+
+<!-- Hero ────────────────────────────────────────────────────────────── -->
+<section class="cs-hero wrap" data-screen-label="HHI / Hero">
+  <div class="eyebrow" style="margin-bottom: 28px;">
+    <span>01 / FEATURED</span>  <span>·</span>  <span>2024 — 2025</span>  <span>·</span>  <span>Real Estate</span>
+  </div>
+  <h1 class="h-display" style="max-width: 18ch;">
+    Revolutionizing<br />
+    real estate through<br />
+    <span style="color: rgb(217, 119, 87)">transparency.</span>
+  </h1>
+
+  <div class="cs-hero-meta">
+    <div>
+      <div class="k">Role</div>
+      <div class="v">Lead Product Designer<br />Research → Ship</div>
+    </div>
+    <div>
+      <div class="k">Team</div>
+      <div class="v">1 PM · 4 Engineers · 1 Designer (me)</div>
+    </div>
+    <div>
+      <div class="k">Duration</div>
+      <div class="v">14 months, ongoing<br />Apr 2024 — present</div>
+    </div>
+    <div>
+      <div class="k">Platforms</div>
+      <div class="v">iOS · Android · Responsive web</div>
+    </div>
+  </div>
+
+  <!-- Banner image -->
+  <div class="cs-banner">
+    <div class="hhi-banner">
+      <div class="left">
+        <span class="label">HHI · The Happy Home Initiative</span>
+        <div class="title">For buyers, <span class="gold">not</span> agents.</div>
+      </div>
+      <div class="right">
+        <div class="phone" style="width: 70%;">
+          <div class="notch"></div>
+          <div class="screen">
+            <div class="scr-hhi-search">
+              <div class="topbar"><i></i><i style="width: 12%; margin-left: auto; background: var(--gold); opacity: 0.7;"></i></div>
+              <div class="img"></div>
+              <div class="row2">
+                <span class="price">$489K</span>
+                <span class="pill">NEW</span>
+              </div>
+              <div class="meta"><i class="a"></i><i class="b"></i><i class="c"></i></div>
+              <div class="meta" style="margin-top: 6px;"><i class="a"></i><i class="b"></i></div>
+              <div class="barchart">
+                <b style="height: 8px;"></b><b style="height: 14px;"></b><b style="height: 20px;"></b>
+                <b style="height: 12px;"></b><b style="height: 18px;"></b><b style="height: 24px; opacity: 1;"></b>
+                <b style="height: 16px;"></b><b style="height: 10px;"></b>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TL;DR ─────────────────────────────────────────────────────────────── -->
+<section class="section wrap" data-screen-label="HHI / TL;DR">
+  <div class="cs-block">
+    <div class="left">
+      <div class="label">TL;DR</div>
+      <div class="num">↘</div>
+      <div class="sub">The thirty-second version, for the impatient.</div>
+    </div>
+    <div class="cs-prose">
+      <p class="lede">
+        HHI gives first-time homebuyers the data their agent doesn't volunteer:
+        days-on-market, price-history, comparable lots, and a transparency
+        score per listing. We rebuilt the search-to-saved-listing flow around a
+        single question — <span class="em">what's this really worth?</span>
+      </p>
+      <div class="cs-stat-row" style="margin-top: 56px;">
+        <div class="cs-stat">
+          <div class="n">+38%</div>
+          <div class="l">Saved-listing rate after week-one of v1.2</div>
+        </div>
+        <div class="cs-stat">
+          <div class="n">−42%</div>
+          <div class="l">Time-to-first-meaningful-action on listing page</div>
+        </div>
+        <div class="cs-stat">
+          <div class="n">4.6★</div>
+          <div class="l">App Store rating across 1,200+ reviews</div>
+        </div>
+        <div class="cs-stat">
+          <div class="n">14</div>
+          <div class="l">Markets shipped, three more in the queue</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="rule"></div></div>
+
+<!-- 01. The Challenge ───────────────────────────────────────────────── -->
+<section class="section wrap" id="challenge" data-screen-label="HHI / 01 Challenge">
+  <div class="cs-block">
+    <div class="left">
+      <div class="label">01 · The Challenge</div>
+      <div class="num">01.</div>
+      <div class="sub">A fragmented market and an opaque transaction.</div>
+    </div>
+    <div class="cs-prose">
+      <h2 class="h-1">Buyers don't<br />trust the price<br />on the page.</h2>
+      <p>
+        Pre-discovery interviews with 18 active homebuyers surfaced the same
+        anxiety in different words: <span class="em">"How do I know this isn't
+        marked up?"</span> Listings showed an asking price, an agent's blurb,
+        and not much else. Days-on-market, prior offers, neighborhood trends —
+        all of it lived in tools the buyer would never see.
+      </p>
+      <p>
+        Existing real-estate apps optimized for the agent's funnel: contact
+        forms above the fold, scarcity badges, urgency timers. The buyer was an
+        afterthought. Our team's brief was direct: <span class="em">give buyers
+        the same view the agent has.</span>
+      </p>
+
+      <div class="cs-quote">
+        "It felt like I was negotiating in the dark — every conversation was a
+        guess at whether the number on the page was real."
+        <cite>— P07, first-time buyer · Atlanta, GA</cite>
+      </div>
+    </div>
+  </div>
+
+  <!-- Research artefacts -->
+  <div class="cs-block" style="margin-top: clamp(60px, 8vw, 100px);">
+    <div class="left">
+      <div class="label">Research</div>
+      <div class="num">3 mo.</div>
+      <div class="sub">18 interviews · 4 contextual inquiries · 220 survey responses · 6 competitor audits.</div>
+    </div>
+    <div class="cs-prose">
+      <div class="cs-pair">
+        <div class="cs-fig">
+          <!-- affinity map placeholder -->
+          <div class="mock">
+            <div class="stripes"></div>
+            <div style="position: absolute; inset: 14px; display: grid; grid-template-columns: repeat(5, 1fr); grid-template-rows: repeat(6, 1fr); gap: 4px;">
+              <i style="background: color-mix(in oklab, var(--gold) 50%, var(--ink-2)); border-radius: 1px;"></i>
+              <i style="background: var(--ink-3); border-radius: 1px;"></i>
+              <i style="background: var(--ink-3); border-radius: 1px;"></i>
+              <i style="background: color-mix(in oklab, var(--gold) 30%, var(--ink-2)); border-radius: 1px; grid-column: span 2;"></i>
+              <i style="background: var(--ink-3); border-radius: 1px;"></i>
+              <i style="background: var(--ink-3); border-radius: 1px;"></i>
+              <i style="background: color-mix(in oklab, var(--gold) 50%, var(--ink-2)); border-radius: 1px; grid-column: span 2;"></i>
+              <i style="background: var(--ink-3); border-radius: 1px;"></i>
+              <i style="background: var(--ink-3); border-radius: 1px;"></i>
+              <i style="background: var(--ink-3); border-radius: 1px;"></i>
+              <i style="background: var(--ink-3); border-radius: 1px;"></i>
+              <i style="background: color-mix(in oklab, var(--gold) 30%, var(--ink-2)); border-radius: 1px;"></i>
+              <i style="background: var(--ink-3); border-radius: 1px;"></i>
+              <i style="background: var(--ink-3); border-radius: 1px;"></i>
+              <i style="background: var(--ink-3); border-radius: 1px;"></i>
+              <i style="background: var(--ink-3); border-radius: 1px;"></i>
+              <i style="background: var(--ink-3); border-radius: 1px;"></i>
+              <i style="background: color-mix(in oklab, var(--gold) 60%, var(--ink-2)); border-radius: 1px;"></i>
+              <i style="background: var(--ink-3); border-radius: 1px;"></i>
+            </div>
+          </div>
+          <span class="cap">Affinity map · pain themes</span>
+        </div>
+        <div class="cs-fig">
+          <!-- jobs to be done -->
+          <div class="mock">
+            <div class="stripes"></div>
+            <div style="position: absolute; inset: 22px; display: flex; flex-direction: column; gap: 14px;">
+              <div style="font-family: var(--font-mono); font-size: 10px; color: var(--gold); letter-spacing: 0.12em; text-transform: uppercase;">Top jobs · prioritized</div>
+              <div>
+                <div style="font-family: var(--font-mono); font-size: 9px; color: var(--muted); letter-spacing: 0.1em; margin-bottom: 4px;">01 · When I find a listing →</div>
+                <div style="height: 6px; background: var(--gold); width: 92%; border-radius: 1px;"></div>
+              </div>
+              <div>
+                <div style="font-family: var(--font-mono); font-size: 9px; color: var(--muted); letter-spacing: 0.1em; margin-bottom: 4px;">02 · When I compare →</div>
+                <div style="height: 6px; background: var(--gold); width: 78%; opacity: 0.85; border-radius: 1px;"></div>
+              </div>
+              <div>
+                <div style="font-family: var(--font-mono); font-size: 9px; color: var(--muted); letter-spacing: 0.1em; margin-bottom: 4px;">03 · When I'm ready →</div>
+                <div style="height: 6px; background: var(--gold); width: 56%; opacity: 0.7; border-radius: 1px;"></div>
+              </div>
+              <div>
+                <div style="font-family: var(--font-mono); font-size: 9px; color: var(--muted); letter-spacing: 0.1em; margin-bottom: 4px;">04 · When I doubt →</div>
+                <div style="height: 6px; background: var(--gold); width: 38%; opacity: 0.55; border-radius: 1px;"></div>
+              </div>
+            </div>
+          </div>
+          <span class="cap">JTBD prioritization</span>
+        </div>
+      </div>
+
+      <p style="margin-top: 28px;">
+        Three pain themes consolidated: <span class="em">opacity</span> (data
+        agents don't share), <span class="em">overwhelm</span> (too many tabs,
+        no canonical view), and <span class="em">urgency-without-context</span>
+        (countdowns and "hot" badges with no price benchmark to anchor them).
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="rule"></div></div>
+
+<!-- 02. The Process ──────────────────────────────────────────────────── -->
+<section class="section wrap" id="process" data-screen-label="HHI / 02 Process">
+  <div class="cs-block">
+    <div class="left">
+      <div class="label">02 · The Process</div>
+      <div class="num">02.</div>
+      <div class="sub">Thinking transparency — every decision shown, not told.</div>
+    </div>
+    <div class="cs-prose">
+      <h2 class="h-1">Three rounds<br />of usability,<br />nothing <span style="color: var(--gold); font-style: italic;">precious</span>.</h2>
+      <p>
+        We started with the listing page, the highest-stake screen in the app.
+        I drew it three different ways before writing a single line of copy: a
+        data-led variant (numbers first), a story-led variant (photos first),
+        and a hybrid. We tested all three with five participants per round.
+      </p>
+    </div>
+  </div>
+
+  <!-- Process steps -->
+  <div class="cs-block" style="margin-top: clamp(40px, 6vw, 64px);">
+    <div class="left">
+      <div class="label">Method</div>
+      <div class="sub">A loop, not a line. Each step fed the next.</div>
+    </div>
+    <div style="grid-column: 2; max-width: 100%;">
+      <div class="cs-steps">
+        <div class="cs-step">
+          <div class="n">01.</div>
+          <h3>Heuristic audit of incumbents</h3>
+          <p>Mapped six competing apps against Nielsen heuristics; identified
+            14 patterns that prioritized agent intent over buyer intent.</p>
+        </div>
+        <div class="cs-step">
+          <div class="n">02.</div>
+          <h3>Generative interviews</h3>
+          <p>Eighteen 60-minute sessions with active buyers, ranging from
+            first-timers to third-purchase. Coded for jobs, not features.</p>
+        </div>
+        <div class="cs-step">
+          <div class="n">03.</div>
+          <h3>Sketch — three directions</h3>
+          <p>Data-led, story-led, hybrid. Drawn fast on paper to defer
+            attachment; each was a deliberate over-correction in one direction.</p>
+        </div>
+        <div class="cs-step">
+          <div class="n">04.</div>
+          <h3>Mid-fi prototype · Round 1</h3>
+          <p>Five participants. Story-led won on warmth, data-led won on
+            trust; hybrid lost both. We killed the hybrid.</p>
+        </div>
+        <div class="cs-step">
+          <div class="n">05.</div>
+          <h3>Hi-fi prototype · Round 2</h3>
+          <p>Layered the transparency score and price-history sparkline into
+            the story-led variant. Tested with five more participants.</p>
+        </div>
+        <div class="cs-step">
+          <div class="n">06.</div>
+          <h3>Pilot release · 3 markets</h3>
+          <p>Shipped a feature-flagged beta to 800 users in Atlanta, Denver,
+            and Raleigh. Iterated against analytics + ten follow-up calls.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Wireframe evolution -->
+  <div class="cs-block" style="margin-top: clamp(60px, 8vw, 100px);">
+    <div class="left">
+      <div class="label">Wireframes</div>
+      <div class="num">v1 → v3</div>
+      <div class="sub">Same screen, three rewrites. Negotiating density against narrative.</div>
+    </div>
+    <div class="cs-prose">
+      <div class="iters">
+        <div class="iter">
+          <div class="v">v1 · Story-led</div>
+          <div class="lines">
+            <i class="box"></i>
+            <i class="long"></i>
+            <i class="mid"></i>
+            <i class="short"></i>
+            <i class="long"></i>
+            <i class="mid"></i>
+            <i class="long"></i>
+            <i class="short"></i>
+          </div>
+        </div>
+        <div class="iter">
+          <div class="v">v2 · + Transparency</div>
+          <div class="lines">
+            <i class="box" style="height: 24px;"></i>
+            <i class="gold"></i>
+            <i class="long"></i>
+            <i class="mid"></i>
+            <i class="long"></i>
+            <i class="gold" style="width: 80%;"></i>
+            <i class="mid"></i>
+            <i class="long"></i>
+            <i class="short"></i>
+          </div>
+        </div>
+        <div class="iter">
+          <div class="v">v3 · Shipped</div>
+          <div class="lines">
+            <i class="box" style="height: 18px;"></i>
+            <i class="gold" style="width: 70%;"></i>
+            <i class="long"></i>
+            <i class="gold" style="width: 50%;"></i>
+            <i class="mid"></i>
+            <i class="long"></i>
+            <i class="gold" style="width: 60%;"></i>
+            <i class="mid"></i>
+            <i class="short"></i>
+            <i class="long"></i>
+          </div>
+        </div>
+      </div>
+      <p style="margin-top: 32px;">
+        Between v1 and v3 the listing page lost two CTAs, gained one chart, and
+        cut its scroll depth by ~30%. The transparency badge — initially a
+        nervous bottom-of-page citation — graduated to the price row by v3.
+      </p>
+    </div>
+  </div>
+
+  <!-- Hi-fi mockups -->
+  <div class="cs-block" style="margin-top: clamp(60px, 8vw, 100px);">
+    <div class="left">
+      <div class="label">Hi-fi</div>
+      <div class="sub">The shipped flow — search, listing, compare.</div>
+    </div>
+    <div>
+      <div class="cs-pair">
+        <div class="cs-fig tall" style="display: grid; place-items: center; padding: 24px;">
+          <div class="phone" style="width: 70%;">
+            <div class="notch"></div>
+            <div class="screen">
+              <div class="scr-hhi-search">
+                <div class="topbar"><i></i><i style="width: 12%; margin-left: auto; background: var(--gold); opacity: 0.7;"></i></div>
+                <div class="img"></div>
+                <div class="row2">
+                  <span class="price">$489K</span>
+                  <span class="pill">NEW</span>
+                </div>
+                <div class="meta"><i class="a"></i><i class="b"></i><i class="c"></i></div>
+                <div class="meta" style="margin-top: 6px;"><i class="a"></i><i class="b"></i></div>
+                <div class="barchart">
+                  <b style="height: 8px;"></b><b style="height: 14px;"></b><b style="height: 20px;"></b>
+                  <b style="height: 12px;"></b><b style="height: 18px;"></b><b style="height: 24px; opacity: 1;"></b>
+                  <b style="height: 16px;"></b><b style="height: 10px;"></b>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="cap">Listing · with price history</span>
+        </div>
+        <div class="cs-fig tall" style="display: grid; place-items: center; padding: 24px;">
+          <div class="phone" style="width: 70%;">
+            <div class="notch"></div>
+            <div class="screen">
+              <div class="scr-hhi-search">
+                <div class="topbar"><i style="width: 50%;"></i><i style="width: 12%; margin-left: auto; background: var(--gold); opacity: 0.7;"></i></div>
+                <!-- compare layout -->
+                <div style="padding: 14px 12px; display: grid; gap: 10px;">
+                  <div style="font-family: var(--font-mono); font-size: 8px; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase;">Comparing 3</div>
+                  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px;">
+                    <div style="aspect-ratio: 4/3; background: var(--ink-3); border-radius: 2px;"></div>
+                    <div style="aspect-ratio: 4/3; background: var(--ink-3); border-radius: 2px;"></div>
+                    <div style="aspect-ratio: 4/3; background: var(--ink-3); border-radius: 2px; border: 1px solid var(--gold);"></div>
+                  </div>
+                  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px;">
+                    <span style="font-family: var(--font-display); font-size: 13px; color: var(--paper);">$489K</span>
+                    <span style="font-family: var(--font-display); font-size: 13px; color: var(--paper);">$525K</span>
+                    <span style="font-family: var(--font-display); font-size: 13px; color: var(--gold);">$472K</span>
+                  </div>
+                  <div style="height: 1px; background: var(--line);"></div>
+                  <div style="display: flex; flex-direction: column; gap: 8px;">
+                    <div style="display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 8px; color: var(--muted);"><span>$/sqft</span><span style="color: var(--paper);">312 · 340 · 289</span></div>
+                    <div style="display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 8px; color: var(--muted);"><span>Days listed</span><span style="color: var(--paper);">12 · 38 · 4</span></div>
+                    <div style="display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 8px; color: var(--muted);"><span>Transparency</span><span style="color: var(--gold);">A · B · A+</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span class="cap">Compare · 3 listings side-by-side</span>
+        </div>
+      </div>
+
+      <div class="cs-fig wide" style="margin-top: 16px; padding: 32px; display: grid; place-items: center;">
+        <div class="desk" style="width: 78%;">
+          <div class="bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+          <div class="desk-content" style="display: grid; grid-template-columns: 220px 1fr 280px; height: calc(100% - 22px);">
+            <div style="border-right: 1px solid var(--line); padding: 18px; display: flex; flex-direction: column; gap: 8px;">
+              <div style="font-family: var(--font-mono); font-size: 9px; color: var(--gold); letter-spacing: 0.12em;">FILTERS</div>
+              <i style="height: 6px; background: var(--ink-3); width: 80%; border-radius: 1px;"></i>
+              <i style="height: 6px; background: var(--ink-3); width: 60%; border-radius: 1px;"></i>
+              <i style="height: 6px; background: var(--gold); opacity: 0.7; width: 50%; border-radius: 1px;"></i>
+              <i style="height: 6px; background: var(--ink-3); width: 70%; border-radius: 1px;"></i>
+              <i style="height: 6px; background: var(--ink-3); width: 40%; border-radius: 1px;"></i>
+              <i style="height: 6px; background: var(--ink-3); width: 70%; border-radius: 1px;"></i>
+            </div>
+            <div style="padding: 18px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; align-content: start;">
+              <div style="aspect-ratio: 5/4; background: var(--ink-3); border-radius: 2px;"></div>
+              <div style="aspect-ratio: 5/4; background: var(--ink-3); border-radius: 2px;"></div>
+              <div style="aspect-ratio: 5/4; background: var(--ink-3); border-radius: 2px; border: 1px solid var(--gold);"></div>
+              <div style="aspect-ratio: 5/4; background: var(--ink-3); border-radius: 2px;"></div>
+              <div style="aspect-ratio: 5/4; background: var(--ink-3); border-radius: 2px;"></div>
+              <div style="aspect-ratio: 5/4; background: var(--ink-3); border-radius: 2px;"></div>
+            </div>
+            <div style="border-left: 1px solid var(--line); background:
+              radial-gradient(circle at 60% 40%, color-mix(in oklab, var(--gold) 25%, transparent), transparent 50%),
+              repeating-linear-gradient(0deg, var(--ink-3) 0 1px, transparent 1px 20px),
+              repeating-linear-gradient(90deg, var(--ink-3) 0 1px, transparent 1px 20px);">
+            </div>
+          </div>
+        </div>
+        <span class="cap">Web · map + grid · saved view</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="rule"></div></div>
+
+<!-- 03. The Impact ───────────────────────────────────────────────────── -->
+<section class="section wrap" id="impact" data-screen-label="HHI / 03 Impact">
+  <div class="cs-block">
+    <div class="left">
+      <div class="label">03 · The Impact</div>
+      <div class="num">03.</div>
+      <div class="sub">What changed, what stuck, what we'd do again.</div>
+    </div>
+    <div class="cs-prose">
+      <h2 class="h-1">The app made<br />the search <span style="color: var(--gold); font-style: italic;">so easy</span><br />and fun.</h2>
+      <p>
+        Six months after the pilot, HHI's listing page is the highest-rated
+        screen in the app. The transparency score — initially the riskiest
+        feature on the roadmap — is now cited in 73% of App Store reviews
+        mentioning trust.
+      </p>
+      <p>
+        Internally, the impact was sharper. The same buyer-research that fed
+        the listing page redirected the entire product roadmap: three planned
+        agent-funnel features were quietly killed, and a buyer-side comparison
+        tool moved up two quarters.
+      </p>
+
+      <div class="cs-stat-row" style="margin-top: 48px;">
+        <div class="cs-stat">
+          <div class="n">+38%</div>
+          <div class="l">Saved-listing rate, v1.2 over v1.0</div>
+        </div>
+        <div class="cs-stat">
+          <div class="n">−42%</div>
+          <div class="l">Time-to-meaningful-action on listing</div>
+        </div>
+        <div class="cs-stat">
+          <div class="n">73%</div>
+          <div class="l">Of 4–5★ reviews cite the transparency score</div>
+        </div>
+        <div class="cs-stat">
+          <div class="n">14 → 17</div>
+          <div class="l">Markets shipped; three queued for Q3</div>
+        </div>
+      </div>
+
+      <div class="cs-quote">
+        "The app made the search so easy and fun — for the first time I felt
+        like I was the one shopping, not the one being sold to."
+        <cite>— App Store review · 5★ · Atlanta, GA</cite>
+      </div>
+
+      <h3 style="font-family: var(--font-display); font-size: clamp(24px, 2.4vw, 32px); margin: 40px 0 16px; font-weight: 400;">Takeaways</h3>
+      <p>
+        <span class="em">Defer attachment.</span> The hybrid mock was the one I
+        wanted to make work; killing it after Round 1 saved a month.
+      </p>
+      <p>
+        <span class="em">Show the data, then frame it.</span> The transparency
+        score was inert as a raw number — useful as a letter grade with a
+        single-sentence "why".
+      </p>
+      <p>
+        <span class="em">Anticipate the second move.</span> The compare flow
+        was added in Round 2 only because three of five buyers tried to compare
+        listings <em>before</em> they could open a second tab.
+      </p>
+
+      <h3 style="font-family: var(--font-display); font-size: clamp(24px, 2.4vw, 32px); margin: 40px 0 16px; font-weight: 400;">Next moves</h3>
+      <p>
+        Q3 ships an offer-builder that pulls the same data forward into a
+        negotiation worksheet. Q4 ships transparency scores for the agent side
+        — the same trick, played from the other chair.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Next case / back ──────────────────────────────────────────────────── -->
+<div class="wrap"><div class="rule"></div></div>
+<section class="wrap cs-next">
+  <div>
+    <div class="eyebrow" style="margin-bottom: 20px;">Next case</div>
+    <a href="index.html#work" class="next-link">
+      Idram <span class="arrow">02 / 03 →</span>
+    </a>
+  </div>
+  <a href="index.html#contact" class="mono" style="display: inline-flex; gap: 8px; align-items: center;">
+    Hire Inesa <span style="color: var(--gold);">↗</span>
+  </a>
+</section>
+
+</main>
+
+<!-- Footer ─────────────────────────────────────────────────────────────── -->
+<footer class="foot wrap" id="contact" data-screen-label="HHI / Contact">
+  <div class="eyebrow" style="margin-bottom: 24px;">Let's connect</div>
+  <div class="foot-cta">
+    <h2 class="h-display">
+      Your <span class="gold">next move</span>,<br />
+      played together.
+    </h2>
+    <a href="mailto:inesa.khachatrian@gmail.com" class="mail">
+      inesa.khachatrian@gmail.com <span aria-hidden="true" style="color: var(--gold);">→</span>
+    </a>
+  </div>
+  <div class="foot-end">
+    <div>© 2026 Inesa Khachatryan · Designed &amp; built in Yerevan</div>
+    <div class="foot-links">
+      <a href="https://www.linkedin.com/in/inesa-khachatryan/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+      <a href="mailto:inesa.khachatrian@gmail.com">Email ↗</a>
+      <a href="#" onclick="event.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' });">Back to top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Apply persisted theme/font choices from homepage (sessionStorage) so the
+  // tweaks feel consistent across pages.
+  (function () {
+    try {
+      const dark = localStorage.getItem("ik-dark");
+      if (dark === "true") document.documentElement.classList.add("theme-dark");
+      const fp = localStorage.getItem("ik-fp");
+      if (fp) {
+        document.body.classList.remove("fp-editorial", "fp-modern", "fp-technical");
+        document.body.classList.add("fp-" + fp);
+      }
+      const accent = localStorage.getItem("ik-accent");
+      if (accent) {
+        document.documentElement.style.setProperty("--gold", accent);
+        document.documentElement.style.setProperty("--gold-soft",
+          `color-mix(in oklab, ${accent} 25%, transparent)`);
+      }
+    } catch (e) {}
+  })();
+</script>
+</body>
+</html>
